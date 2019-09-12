@@ -4,7 +4,7 @@ function Employee(name,age,baseSalary) // We can create a construtor without a c
     this.age = age;
     this.baseSalary = baseSalary;
     
-    let monthlyBonus = 2000; // The scope of this variable is in this function only and make it Abstract
+    let monthlyBonus = 2000; // The scope of this variable is in this function only and make it Abstract.
 
     let calculateFinalSalary = function() // The scope of this function is in this function only and make it Abstract
     {

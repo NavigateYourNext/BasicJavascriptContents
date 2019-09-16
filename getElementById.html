@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>DOM Manipulation</title>
+
+    <script type = "text/javascript">
+    function buttonClick ()
+    {
+        //alert ("Button Clicked Succesfully ...");
+        document.getElementById("heading2").innerHTML = "Let's Learn Java Script"; //It will change inner text of heading2 id
+    }
+    
+    
+    </script>
+
+
+</head>
+<body>
+    <button onclick="buttonClick()">Clike Me Here</button>  <!-- OnClick Event Registered with Button -->
+    <h2 id="heading2">Some Random Text</h2>
+</body>
+</html>

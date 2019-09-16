@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Drop Down Box</title>
+    <script>
+    function function1()
+    {
+        var val = document.getElementById("city");
+        var selectedValue = val.options[val.selectedIndex].value;
+        if(selectedValue == "Default")
+        {
+            alert("Please select proper value");
+        }
+        else
+        {
+            alert(val.options[val.selectedIndex].value);
+        }
+        
+    }
+    
+    </script>
+</head>
+<body>
+    <select id="city">
+        <option value = "Default">Default</option>
+        <option value = "Pune">Pune</option>
+        <option value = "Mumbai">Mumbai</option>
+    </select>
+    <br>
+    <br>
+    <button onclick="function1()" id="btn1">Click Here</button>
+</body>
+</html>

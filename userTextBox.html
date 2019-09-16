@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>User Text Box</title>
+    <script type = "text/javascript">
+    function function1()
+    {
+        // var str = document.getElementById("text1").value;
+        // alert ("Entered Value Is : "+str);
+
+        if(document.getElementById("text1").value === document.getElementById("text2").value)
+        {
+            alert ("Error : Username and Password Is Same");
+        }
+        else
+        {
+            alert ("Login Successful...");
+        }
+
+
+
+    }
+    
+    </script>
+</head>
+<body>
+    <input type="text" id="text1" placeholder="Enter Username">
+    <br>
+    <br>
+    <input type="password" id="text2" placeholder="Enter Password">
+    <br>
+    <br>
+    <button onclick = "function1()" id="button1">Sign In</button>
+</body>
+</html>

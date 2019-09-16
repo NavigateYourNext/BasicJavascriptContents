@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Regular Expression 1</title>
+    <script>
+    function validate()
+    {
+        var uname = document.getElementById("uname").value;
+        var regex = /E00/i; // "//" in between this expression and "i" stands for case-insensitive
+        // for cellphone /[7-9]\d{9}/ i.e. start with 7/8/9 and after that total 9 digits
+        if(regex.test(uname))
+        {
+            alert("Valid Username");
+        }
+        else
+        {
+            alert("Invalid Username");
+            document.getElementById("lbuser").style.visibility="visible";
+        }
+    }
+    
+    </script>
+</head>
+<body>
+    <form action = "welcome.html">
+        <input id="uname" type="text"></input>
+        <label id = "lbuser" style="color: red; visibility: hidden;">Invalid Username</label>
+        <br><br>
+        <button onclick="validate()" type="button">Submit</button>
+    </form>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Form Validation</title>
+    <script>
+    function validate()
+    {
+        var username = document.getElementById("uname");
+        var password = document.getElementById("pass");
+
+        if(username.value.trim() == "" || password.value.trim() =="")
+        {
+            alert("Please enter username and password");
+            return false;
+        }
+        else
+        {
+            return true;
+        }
+    }
+    
+    </script>
+</head>
+<body>
+    <form onsubmit="return validate();" action="welcome.html">
+    <input type = "text" id="uname">Enter UserName </input> <!-- in html we have 'required' attribute which we can use for mandatory fields-->
+    <input type = "password" id="pass">Enter Password </input>
+    <br><br>
+    <button type = "submit">Submit</button>
+</form>
+</body>
+</html>

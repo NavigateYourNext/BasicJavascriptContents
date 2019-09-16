@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Get Element By Tag Name</title>
+    <script>
+    function function1()
+    {
+        var para = document.getElementsByTagName("p");
+        // para[0].style.color="red";
+        // para[1].style.fontStyle="italic";
+        // para[2].style.fontFamily="times new roman";
+        // para[3].style.fontWeight="bold"
+        // para[4].style.fontSize = 72;
+
+        //OR
+
+        for(var i=0; i<para.length; i++)
+        {
+            para[i].style.color="blue";
+        }
+    }
+    
+    
+    </script>
+</head>
+<body>
+    <p>Paragraph 1</p>
+    <br>
+    <br>
+    <p>Paragraph 2</p>
+    <br>
+    <br>
+    <p>Paragraph 3</p>
+    <br>
+    <br>
+    <p>Paragraph 4</p>
+    <br>
+    <br>
+    <p>Paragraph 5</p>
+    <br>
+    <br>
+    <button onclick="function1()" id="btn1">Click Here</button>
+</body>
+</html>

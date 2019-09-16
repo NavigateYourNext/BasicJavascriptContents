@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Mouse Hover Events</title>
+    <script>
+    function setNewImage()
+    {
+       document.getElementById("img1").src = "google2.png";
+    }
+    function setOldImage()
+    {
+        document.getElementById("img1").src = "google1.png";
+    }
+    </script>
+</head>
+<body>
+    <img onmouseover="setNewImage()" onmouseout="setOldImage()" id = "img1" src= "google1.png" width="300"></img>
+</body>
+</html>

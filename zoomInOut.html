@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Zoom In Out</title>
+    <script>
+    
+    var ID = 0;
+    var width = 100;
+    var difference = 2;
+    function zoomIn()
+    {
+        ID = setInterval(zin,20);
+    }
+    function zin()
+    {
+        if(width < 200)
+        {
+            width = width+difference;
+            document.getElementById("img").style.width = width;
+        }
+        else
+        {
+            clearInterval(ID);
+        }
+    }
+    function zoomOut()
+    {
+        
+    }
+    
+    
+    </script>
+</head>
+<body>
+    
+    <img onmouseover="zoomIn()" onmouseout="zoomOut()" src="google1.png" id="img" width=100></img>
+   
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Timeout Methods</title>
+    <script>
+    /*
+    1.setTimeout() allows us to execute statements ONCE after an interval
+    2.clearTimeout() method clears a timer set with setTimeout()
+    3.setInterval() allows us to execute statements REPETADELY after an interval
+    4.clearInterval() method clears a timer set with setInterval()
+    */
+        var ID = 0;
+        var seconds = 0;
+        function printMsg()
+        {
+            document.getElementById("someText").innerHTML = seconds + " seconds has been passed";
+            seconds++;
+        }
+        function start()
+        {
+            ID=window.setInterval(printMsg,1000); //printMsg will call multiple times. 
+           // ID = window.setTimeout(printMsg,5000); //here printMsg function will be refer after 5 seconds and will return some unique id
+        }
+        function stop()
+        {
+            window.clearInterval(ID);
+            //window.clearTimeout(ID); 
+        }
+    </script>
+</head>
+<body>
+    <button onclick="start()" id="start">Start</button>
+    <h2 id="someText">Some Text</h2>
+    <button onclick="stop()" id="start">Stop</button>
+</body>
+</html>

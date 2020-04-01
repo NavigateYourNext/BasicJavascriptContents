@@ -39,7 +39,7 @@ fruits.splice(2,0,"Jackfruit","Grapes"); //it will add elements from mentioned p
 console.log (fruits);
 
 let citrusFruits = fruits.slice(0,2); //it will store elements from 1st mentioned position till 2nd mentioned position
-console.log (citrusFruits);
+console.log ("Hi"+citrusFruits);
 
 citrusFruits.concat(fruits); //concat arrays if more arrays are present use ',' to seperate it
 console.log (citrusFruits);
